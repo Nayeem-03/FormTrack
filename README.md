@@ -1,6 +1,8 @@
-# FormTrack - Placement Form Progress Tracker
+# FormSnap – Google Form Progress Tracker
 
-A web application to help students track placement-related Google Form submissions with a one-click bookmarklet save feature.
+FormSnap is a smart progress tracking system that helps users monitor, manage, and analyze submissions across all Google Forms in one place.  
+It provides organized tracking, status updates, and insights to ensure no form response or task is missed.
+
 
 ## Tech Stack
 

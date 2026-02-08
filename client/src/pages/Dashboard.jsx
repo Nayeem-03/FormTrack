@@ -131,7 +131,7 @@ const Dashboard = () => {
 
     const getBookmarkletCode = () => {
         const token = localStorage.getItem('token')
-        const apiUrl = 'http://localhost:5001/api'
+        const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5001/api'
         return `javascript:(function(){
       var title=document.title;
       var url=window.location.href;
