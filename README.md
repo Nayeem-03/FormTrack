@@ -1,21 +1,28 @@
-# FormSnap – Google Form Progress Tracker
+# FormSnap – Universal Google Form Progress Tracker
 
-FormSnap is a smart progress tracking system that helps users monitor, manage, and analyze submissions across all Google Forms in one place.  
-It provides organized tracking, status updates, and insights to ensure no form response or task is missed.
+**FormSnap** is a smart progress tracking system that helps users monitor, manage, and analyze submissions across all Google Forms in one place.
 
+It is designed for **students, professionals, and teams** to keep track of any type of form — including job applications, surveys, registrations, event forms, and academic submissions — ensuring nothing gets missed.
 
-## Tech Stack
+---
 
-- **Frontend**: React + Vite
-- **Backend**: Node.js + Express
-- **Database**: MongoDB
-- **Auth**: JWT
+## 🚀 Tech Stack
 
-## Quick Start
+* **Frontend:** React + Vite
+* **Backend:** Node.js + Express
+* **Database:** MongoDB
+* **Authentication:** JWT
+
+---
+
+## ⚡ Quick Start
 
 ### Prerequisites
-- Node.js 18+
-- MongoDB running locally (or MongoDB Atlas)
+
+* Node.js 18+
+* MongoDB running locally (or MongoDB Atlas)
+
+---
 
 ### 1. Setup Backend
 
@@ -25,7 +32,13 @@ npm install
 npm run dev
 ```
 
-The server runs on `http://localhost:5000`
+The server runs on:
+
+```
+http://localhost:5000
+```
+
+---
 
 ### 2. Setup Frontend
 
@@ -35,25 +48,42 @@ npm install
 npm run dev
 ```
 
-The app runs on `http://localhost:5173`
+The app runs on:
+
+```
+http://localhost:5173
+```
+
+---
 
 ### 3. Environment Variables
 
-Copy `server/.env.example` to `server/.env` and configure:
-- `MONGODB_URI` - Your MongoDB connection string
-- `JWT_SECRET` - Secret key for JWT tokens
+Copy:
 
-## Features
+```
+server/.env.example → server/.env
+```
 
-- ⚡ One-click bookmarklet to save Google Forms
-- 📊 Dashboard with search and filter
-- 📈 Status tracking (Applied → Test → Interview → Offer)
-- 🏷️ Tags and labels (Dream, Backup, Off-campus)
-- 📝 Notes for each application
-- 📉 Analytics dashboard
-- 🌙 Dark mode support
+Configure the following:
 
-## Project Structure
+* **MONGODB_URI** — Your MongoDB connection string
+* **JWT_SECRET** — Secret key for JWT authentication
+
+---
+
+## ✨ Features
+
+* ⚡ One-click bookmarklet to save Google Forms
+* 📊 Dashboard with search and filter
+* 📈 Custom status tracking for any workflow
+* 🏷️ Tags and labels for organization
+* 📝 Notes for each saved form
+* 📉 Analytics dashboard for insights
+* 🌙 Dark mode support
+
+---
+
+## 📁 Project Structure
 
 ```
 FormTrack/
@@ -71,3 +101,22 @@ FormTrack/
     ├── routes/
     └── server.js
 ```
+
+---
+
+## 🎯 Use Cases
+
+FormSnap can be used to track:
+
+* Job and internship applications
+* Event registrations
+* Survey submissions
+* Academic forms
+* Contest entries
+* Any recurring Google Form workflow
+
+---
+
+## 📌 Goal
+
+FormSnap simplifies form tracking by centralizing all submissions into a clean, searchable dashboard — helping users stay organized and productive.
