@@ -213,10 +213,10 @@ router.post('/forgot-password', async (req, res, next) => {
             user.resetPasswordExpires = undefined
             await user.save({ validateBeforeSave: false })
 
-            console.error('Email error:', emailError)
+            console.error('Email error details:', emailError)
             return res.status(500).json({
                 success: false,
-                message: 'Failed to send email. Please try again later.'
+                message: emailError.message || 'Failed to send email. Please try again later.'
             })
         }
     } catch (error) {

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
+import api from '../services/api'
 import './Auth.css'
 
 const Login = () => {
@@ -45,12 +46,8 @@ const Login = () => {
         setLoading(true)
 
         try {
-            const res = await fetch('/api/auth/forgot-password', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email: resetEmail })
-            })
-            const data = await res.json()
+            const res = await api.post('/auth/forgot-password', { email: resetEmail })
+            const data = res.data
 
             if (data.success) {
                 setResetSent(true)
